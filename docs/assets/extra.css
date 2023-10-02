@@ -1,8 +1,9 @@
 @import url(inter.css);
+@import url(lato.css);
 @import url(fira_code.css);
 
 :root > * {
-    --md-text-font: 'Inter';
+    --md-text-font: 'Lato';
     --md-code-font: 'Fira Code';
 }
 
@@ -24,6 +25,12 @@
     --md-typeset-color: #1C1B1F;
     --md-typeset-a-color: #6750A4;
     --md-accent-fg-color: #6750A4;
+}
+
+.md-typeset h1, .md-typeset h2 {
+    letter-spacing: 0.01em;
+    font-weight: 600;
+    font-family: "Inter";
 }
 
 

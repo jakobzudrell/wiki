@@ -1,6 +1,6 @@
 # ![image](../assets/logos/paperless-dark.svg#only-light){.index-logo style="height:100px"} ![image](../assets/logos/paperless-light.svg#only-dark){.index-logo style="height:100px"}
 
-## Setup
+## Installation
 TBD
 
 The application is installed on a LXC container and uses a remote MySQL instance. Files are stored via an NFS mounted share.

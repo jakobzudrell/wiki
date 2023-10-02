@@ -1,20 +1,12 @@
 # Welcome
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This wiki hosts all kind of information about selfhosted applications, network stuff, hardware, and so on... Basically speaking, it is about homelabs.
 
-## Commands
+## Technical details
+The underlying projects this wiki is build upon are [mkdocs.org](https://www.mkdocs.org) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). MkDocs provides an easy way to create a static website using Markdown files as a content source.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+The wiki pages are hosted on a Github repository and each `push` to the main branch triggers a _build_ using webhooks and a quick and dirty Python script that takes care of the webserver stuff.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-## Update
-Another small update, and another one, and another one...
+## Disclaimer
+All information on this wiki comes from non-professional hobbyists that like to tinker around in their homelabs. 
+Use with care and use your brain before copying stuff. We do not take responsibility or liability for any damages, including any general, special, incidental or consequental damages arising out of the use or inability to use the information provided.
