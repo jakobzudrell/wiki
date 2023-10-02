@@ -47,14 +47,16 @@ markdown_extensions:
 
 strict: true
 
-nav:
-  - Home: index.md
-  - 'Networking':
-    - 'Netplan': networking/netplan.md
-    - 'OPNsense': networking/opnsense.md
-    - 'Mikrotik': networking/mikrotik.md
-  - 'Applications':
-    - 'Paperless': applications/paperless.md
+# nav:
+#   - Home: index.md
+#   - 'Networking':
+#     - 'Netplan': networking/netplan.md
+#     - 'OPNsense': networking/opnsense.md
+#     - 'Mikrotik': networking/mikrotik.md
+#   - 'Applications':
+#     - 'Paperless': applications/paperless.md
+#   - 'Hardware':
+
 
 repo_url: https://github.com/jakobzudrell/wiki
 copyright: Copyright &copy; 2023 Jakob Zudrell
