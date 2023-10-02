@@ -1,0 +1,60 @@
+site_name: Wiki
+
+theme: 
+  name: material
+  
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - navigation.top
+    - toc.integrate
+    - content.code.annotate
+
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - assets/extra.css
+  
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - def_list
+  - admonition
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+strict: true
+
+nav:
+  - Home: index.md
+  - 'Networking':
+    - 'Netplan': networking/netplan.md
+    - 'OPNsense': networking/opnsense.md
+    - 'Mikrotik': networking/mikrotik.md
+  - 'Applications':
+    - 'Paperless': applications/paperless.md
+
+repo_url: https://github.com/jakobzudrell/wiki
+copyright: Copyright &copy; 2023 Jakob Zudrell
