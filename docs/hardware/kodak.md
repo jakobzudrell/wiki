@@ -1,3 +1,10 @@
+---
+title: Kodak i2000
+summary: Kodak i2000 installation & other guides
+authors:
+    - Jakob Zudrell
+date: 2023-10-02
+---
 # Kodak i2000
 Getting to work a Kodak i2000 on a Ubuntu VM was a classical approach of cherry picking the needed steps from the internet and hoping that it will work in the end.
 
