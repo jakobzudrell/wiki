@@ -1,4 +1,4 @@
-# Welcome to zudrell.eu
+# Welcome to the Wiki
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
