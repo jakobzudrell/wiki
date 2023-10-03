@@ -27,7 +27,6 @@ wget https://resources.kodakalaris.com/docimaging/drivers/LinuxSoftware_i2000_v4
 ```bash
 wget http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.5_amd64.deb
 sudo dpkg -i multiarch-support_2.27-3ubuntu1.5_amd64.deb
-````
 ```
 I found out that the Kodak driver setup is quite sensitive when it comes to missing packages and other stuff. Therefore I just rebooted more or less after each step 😀
 3. Next we install SANE

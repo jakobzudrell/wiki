@@ -1,7 +1,10 @@
-site_name: Wiki
+site_name: Homelab Wiki
 
 theme: 
   name: material
+  logo: assets/logos/white_flower.png
+  favicon: assets/logos/white_flower.png
+
   
   palette:
     # Palette toggle for light mode
