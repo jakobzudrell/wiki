@@ -5,7 +5,7 @@ authors:
     - Jakob Zudrell
 date: 2023-10-02
 ---
-# ![image](../assets/logos/paperless-dark.svg#only-light){.index-logo style="height:100px"} ![image](../assets/logos/paperless-light.svg#only-dark){.index-logo style="height:100px"}
+# paperless-ngx
 
 ## Installation
 TBD

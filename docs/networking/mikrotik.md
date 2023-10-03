@@ -5,6 +5,6 @@ authors:
     - Jakob Zudrell
 date: 2023-10-02
 ---
-# ![Mikrotik](../assets/logos/mikrotik.png)
+# Mikrotik
 
 This page is all about [Mikrotik](https://mikrotik.com/)
