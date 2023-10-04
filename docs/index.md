@@ -8,5 +8,6 @@ The underlying projects this wiki is build upon are [mkdocs.org](https://www.mkd
 The wiki pages are hosted on a Github repository and each `push` to the main branch triggers a _build_ using webhooks and a quick and dirty Python script that takes care of the webserver stuff.
 
 ## Disclaimer
-All information on this wiki comes from non-professional hobbyists that like to tinker around in their homelabs. 
-Use with care and use your brain before copying stuff. We do not take responsibility or liability for any damages, including any general, special, incidental or consequental damages arising out of the use or inability to use the information provided.
+The information on this wiki are by no means "best practice" or professional guides. It is a place to note down how we do stuff and exchange information. Articles will likely change a lot as we always learn new things and are keen to improve.
+
+We do not take responsibility or liability for any damages, including any general, special, incidental or consequental damages arising out of the use or inability to use the information provided.
