@@ -43,3 +43,25 @@ in-target wget http://pxe.zudrell.eu/isos/debian-12.1.0-amd64-netboot/firstrun.s
 in-target chmod 754 /tmp/firstrun.sh; \
 in-target /bin/bash /tmp/firstrun.sh
 ```
+
+## Interface Configuration
+Network interfaces on my Debian servers are configured using the [`systemd-networkd`](https://manpages.debian.org/bookworm/systemd/systemd-networkd.8.en.html) Network manager. Local configuration resides under `/ect/systemd/network` and must end with `.network`.
+
+Here's an example config (please refer to the [full specification](https://manpages.debian.org/bookworm/systemd/systemd.network.5.en.html) for details):
+```
+[Match]
+PermanentMACAddress=ff:ff:ff:ff:ff:ff
+
+[Network]
+DHCP=no
+Address=10.0.0.10/24
+Gateway=10.0.0.1
+DNS=10.0.0.2
+Domains=home.yourdomain.com
+```
+!!! note
+    Make sure to rename the `/etc/network/interfaces` file to disable `ìfupdown`
+
+### Links
+* [https://www.debian.org/doc/manuals/debian-reference/ch05.en.html](https://www.debian.org/doc/manuals/debian-reference/ch05.en.html)
+* [https://www.debian.org/doc/manuals/debian-handbook/sect.network-config](https://www.debian.org/doc/manuals/debian-handbook/sect.network-config)
