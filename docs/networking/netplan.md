@@ -6,4 +6,3 @@ authors:
 date: 2023-10-02
 ---
 # Netplan
-hello world!
