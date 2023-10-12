@@ -13,6 +13,9 @@ In a typical logging stack (as per Grafana's definition) Promtail is taking the 
 You can get an overview [here](https://grafana.com/docs/loki/latest/get-started/overview/).
 
 ## Installation
+!!! note
+    An easier way to install Promtail is to use the APT repository provided by GrafanaLabs. This will take care of user creation, systemd units, and everything else.
+
 The [documentation over at Grafana Labs](https://grafana.com/docs/loki/latest/send-data/promtail/installation/) is not really detailed when it comes to installing, so here's my way.
 
 1. Head over to the Promtail [releases page](https://github.com/grafana/loki/releases) and download the latest build for your platform and unzip it.
