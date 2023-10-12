@@ -21,4 +21,4 @@ sudo systemctl enable --now grafana-server.service
 ```
 
 ## Configuration
-The main configuration file is `/ect/grafana/grafana.ini`
+The main configuration file is `/ect/grafana/grafana.ini`. It features an incredible amount of options so you are better of with the offical configuration reference.

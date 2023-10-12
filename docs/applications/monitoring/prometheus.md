@@ -6,7 +6,8 @@ authors:
 date: 2023-10-09
 ---
 # Prometheus
-TBD
+## Installation
+I ususally install Prometheus using the providided package in the APT repositories.
 
 ## Exporters
 ### Blackbox Exporter
