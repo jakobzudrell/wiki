@@ -127,7 +127,7 @@ The steps here are pretty much self-explanatory and you should be able to fill o
 
 
 ## Configuration
-...
+....
 
 ## Miscellaneous
 ### NGINX Reverse Proxy
