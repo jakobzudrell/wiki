@@ -27,7 +27,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
-    - toc.integrate
+    - toc.follow
     - content.code.annotate
 
   icon:
@@ -47,6 +47,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - toc:
+      permalink: true
 
 strict: true
 
