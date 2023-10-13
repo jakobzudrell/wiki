@@ -11,7 +11,7 @@ I chose [Gitea](https://about.gitea.com/) after figuring out that Gitlab is just
 applications and requires at least 6GB of memory to work properly. Gitea is very lightweight, easy to configure and runs as a single compiled go binary.
 
 ## Environment
-Below is a brief schema of how the environment should look like in the end;
+Below is a brief overview on how the environment should look like in the end;
 
 * The Gitea server is a lightweight Debian instance running Gitea as a systemd service and sending logs and metrics to the monitoring server (not in the schema)
 * The Gitea server connects to an NFS share on the NAS to store repository data.
