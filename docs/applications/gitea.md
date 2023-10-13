@@ -124,3 +124,42 @@ WantedBy=multi-user.target
 At this point Gitea should be able to start the systemd service, spin up a browser and finish the installation using the web-based installer.
 
 The steps here are pretty much self-explanatory and you should be able to fill out all the options using the information from above steps.
+
+
+## Configuration
+TBD
+
+## Miscellaneous
+### NGINX Reverse Proxy
+This is a basic reverse proxy setup as taken from the [Gitea docs](https://docs.gitea.com/administration/reverse-proxies). You can further tune this by serving static assets directly from the reverse proxy. Please refer to the official docs for this.
+```nginx
+server {
+    listen 80;
+    server_name git.yourdomain.com;
+
+    # Prevent nginx HTTP Server Detection
+    server_tokens off;
+
+    # Enforce HTTPS
+    return 301 https://$server_name$request_uri;
+}
+
+server {        
+    listen 443 ssl http2;
+    server_name git.yourdomain.com;
+
+    ssl_certificate /etc/ssl/certs/git.yourdomain.com.crt;
+    ssl_certificate_key /etc/ssl/private/git.yourdomain.com.key;
+
+    location / {
+        client_max_body_size 512M;
+        proxy_pass http://git01-atvie.home.zudrell.eu:3000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+Gitea features a lot more small hacks such as fail2ban, etc. You can all find guides for those in the official docs. As I start working more with Gitea I will add such stuff here as well of course.
