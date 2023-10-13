@@ -18,7 +18,7 @@ Below is a brief overview on how the environment should look like in the end;
 * An external MariaDB instance serves as the database provider
 * An nginx reverse-proxy acts as a gateway for clients to access the Gitea instance.
 
-The internal traffic (circled red) is not encryped. Traffic between clients and the reverse proxy is encrypted via HTTPS2.
+The internal traffic (circled red) is not encrypted. Traffic between clients and the reverse proxy is encrypted via HTTPS2.
 
 ![Gitea schema](../assets/img/gitea-schema.svg){ align=middle }
 
